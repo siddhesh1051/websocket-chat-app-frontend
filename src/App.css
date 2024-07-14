@@ -1,0 +1,19 @@
+/* styles.css */
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+  .chat-container {
+    padding: 10px;
+  }
+}
