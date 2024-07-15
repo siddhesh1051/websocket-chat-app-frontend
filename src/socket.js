@@ -3,7 +3,10 @@ import { io } from "socket.io-client";
 const createSocket = (serverUrl) => {
   const socket = io(serverUrl, {
     cors: {
-      origin: "http://localhost:3000",
+      origin: [
+        "http://localhost:3000",
+        "https://ayna-full-stack-assignment-websocket.vercel.app/",
+      ],
       methods: ["GET", "POST"],
     },
   });

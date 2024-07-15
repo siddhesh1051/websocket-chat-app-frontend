@@ -6,7 +6,7 @@ const MessageInput = ({ currentGroup }) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = createSocket("http://localhost:1337");
+    const newSocket = createSocket(`${process.env.REACT_APP_STRAPI_URL}`);
     setSocket(newSocket);
 
     return () => {

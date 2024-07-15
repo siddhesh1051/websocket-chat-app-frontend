@@ -16,7 +16,7 @@ const MessageList = ({ currentGroup }) => {
       socket.off("message");
     }
 
-    const newSocket = createSocket("http://localhost:1337");
+    const newSocket = createSocket(`${process.env.REACT_APP_STRAPI_URL}`);
     setSocket(newSocket);
 
     newSocket.emit("join", currentGroup);
