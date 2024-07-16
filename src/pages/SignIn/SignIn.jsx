@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../context/AuthContext";
@@ -30,9 +30,9 @@ const SignIn = () => {
       if (data?.error) {
         throw data?.error;
       } else {
+        navigate("/chat");
         setToken(data.jwt);
         setUser(data.user);
-        navigate("/", { replace: true });
       }
     } catch (error) {
       console.error(error);

@@ -14,8 +14,14 @@ const App = () => {
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />
       <Route
-        path="/"
+        path="/chat"
         element={getToken() ? <Chat /> : <Navigate to="/signin" />}
+      />
+      <Route
+        path="/"
+        element={
+          getToken() ? <Navigate to="/chat" /> : <Navigate to="/signin" />
+        }
       />
     </Routes>
   );
