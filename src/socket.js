@@ -5,7 +5,7 @@ const createSocket = (serverUrl) => {
     cors: {
       origin: [
         "http://localhost:3000",
-        "https://ayna-full-stack-assignment-websocket.vercel.app/",
+        "https://ayna-full-stack-assignment-websocket.vercel.app",
       ],
       methods: ["GET", "POST"],
     },

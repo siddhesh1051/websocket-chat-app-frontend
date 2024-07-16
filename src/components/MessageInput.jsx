@@ -62,7 +62,7 @@ const MessageInput = ({ currentGroup }) => {
           stroke-width="1.5"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-send"
+          className="lucide lucide-send"
         >
           <path d="m22 2-7 20-4-9-9-4Z" />
           <path d="M22 2 11 13" />
