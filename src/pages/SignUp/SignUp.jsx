@@ -28,7 +28,7 @@ const SignUp = () => {
       } else {
         setToken(data.jwt);
         setUser(data.user);
-        navigate("/", { replace: true });
+        navigate("/chat");
       }
     } catch (error) {
       console.error(error);

@@ -30,9 +30,9 @@ const SignIn = () => {
       if (data?.error) {
         throw data?.error;
       } else {
-        navigate("/chat");
         setToken(data.jwt);
         setUser(data.user);
+        navigate("/chat");
       }
     } catch (error) {
       console.error(error);
