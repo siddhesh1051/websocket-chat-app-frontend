@@ -10,7 +10,6 @@ import Chat from "./components/Chat";
 
 const App = () => {
   return (
-    // vc
     <Routes>
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />
